@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ForceFitness.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="css/JediBlue.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+      <img src="images/jedi_logo_blue.png" alt="Jedi Order Symbol">
+      <h1>Force Fitness</h1>
+    </header>
+
+    <nav>
+      <ul class="primary">
+        <li><a href="index.html">Home</a>
+          <ul class="sub">
+            <li><a href="#">link 1</a></li>
+            <li><a href="#">link 2</a></li>
+          </ul>
+        </li>
+        <li><a href="nutritionInfo.html">Nutrition</a>
+          <ul class="sub">
+            <li><a href="#">link 1</a></li>
+            <li><a href="#">link 2</a></li>
+          </ul>
+        </li>
+        <li><a href="exerciseInfo.html">Exercise</a>
+          <ul class="sub">
+            <li><a href="#">link 1</a></li>
+            <li><a href="#">link 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    </main>
+
+    <footer>
+      <p><small>Copyright &copy; Force Fitness 2016 - website by Josh Cooley</small></p>
+    </footer>
+
+</body>
+</html>

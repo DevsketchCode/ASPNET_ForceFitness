@@ -17,13 +17,13 @@
 
     <nav>
       <ul class="primary">
-        <li><a href="index.html">Home</a>
+        <li><a href="Default.aspx">Home</a>
           <ul class="sub">
             <li><a href="#">link 1</a></li>
             <li><a href="#">link 2</a></li>
           </ul>
         </li>
-        <li><a href="nutritionInfo.html">Nutrition</a>
+        <li><a href="nutritionInfo.aspx">Nutrition</a>
           <ul class="sub">
             <li><a href="#">link 1</a></li>
             <li><a href="#">link 2</a></li>

@@ -15,44 +15,23 @@
       <h1>Force Fitness</h1>
     </header>
 
-    <nav>
-      <ul class="primary">
-        <li><a href="Default.aspx">Home</a>
-          <ul class="sub">
-            <li><a href="#">link 1</a></li>
-            <li><a href="#">link 2</a></li>
-          </ul>
-        </li>
-        <li><a href="nutritionInfo.aspx">Nutrition</a>
-          <ul class="sub">
-            <li><a href="#">link 1</a></li>
-            <li><a href="#">link 2</a></li>
-          </ul>
-        </li>
-        <li><a href="exerciseInfo.html">Exercise</a>
-          <ul class="sub">
-            <li><a href="#">link 1</a></li>
-            <li><a href="#">link 2</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Login</a></li>
-      </ul>
-    </nav>
-
-    <main>
-
     <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-    </form>
+    
+        <nav>
+            <asp:Menu ID="MainNavigation" runat="server" DataSourceID="MainNavDS" Orientation="Horizontal" StaticDisplayLevels="2"></asp:Menu>
+        </nav>
 
-    </main>
+        <main>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </main>
+    </form>
 
     <footer>
       <p><small>Copyright &copy; Force Fitness 2016 - website by Josh Cooley</small></p>
     </footer>
-
+    <asp:SiteMapDataSource ID="MainNavDS" runat="server" />
 </body>
 </html>
